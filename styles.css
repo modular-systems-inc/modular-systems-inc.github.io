@@ -58,20 +58,37 @@ nav a.active {
 .language-switcher {
     margin-left: auto;
     font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: #f8f9fa;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    border: 1px solid #e9ecef;
+}
+
+.globe-icon {
+    font-size: 1.1rem;
+    margin-right: 0.25rem;
 }
 
 .language-switcher a {
     color: #666;
     font-weight: 400;
+    padding: 0.25rem 0.5rem;
+    border-radius: 12px;
+    transition: all 0.3s;
 }
 
 .language-switcher a.active-lang {
-    color: #0066cc;
-    font-weight: 600;
+    color: #fff;
+    background-color: #0066cc;
+    font-weight: 500;
 }
 
-.language-switcher a:hover {
+.language-switcher a:hover:not(.active-lang) {
     color: #0066cc;
+    background-color: #e8f4ff;
 }
 
 .hero {
@@ -308,6 +325,13 @@ footer {
         margin-left: 0;
         order: -1;
         margin-bottom: 0.5rem;
+        justify-self: center;
+        font-size: 0.8rem;
+        padding: 0.4rem 0.8rem;
+    }
+    
+    .globe-icon {
+        font-size: 1rem;
     }
     
     .hero h1 {
