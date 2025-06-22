@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>お問い合わせ - Modular Systems合同会社</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <img src="modular_systems.jpg" alt="Modular Systems" class="logo">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">ホーム</a></li>
+                        <li><a href="about.html">会社概要</a></li>
+                        <li><a href="products.html">製品情報</a></li>
+                        <li><a href="contact.html" class="active">お問い合わせ</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>お問い合わせ</h1>
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <div class="container">
+                <div class="contact-intro">
+                    <p>Modular Systemsへのお問い合わせは、下記フォームよりお気軽にご連絡ください。<br>
+                    ご相談・お見積もりのみでも歓迎いたします。通常、2営業日以内にご返信させていただきます。</p>
+                </div>
+
+                <div class="contact-content">
+                    <div class="contact-form-wrapper">
+                        <form class="contact-form" action="#" method="post">
+                            <div class="form-group">
+                                <label for="company">会社名</label>
+                                <input type="text" id="company" name="company" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="name">お名前 <span class="required">*</span></label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">メールアドレス <span class="required">*</span></label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone">電話番号</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subject">お問い合わせ種別 <span class="required">*</span></label>
+                                <select id="subject" name="subject" required>
+                                    <option value="">選択してください</option>
+                                    <option value="consultation">ご相談</option>
+                                    <option value="estimate">お見積もり</option>
+                                    <option value="support">サポート</option>
+                                    <option value="other">その他</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">お問い合わせ内容 <span class="required">*</span></label>
+                                <textarea id="message" name="message" rows="8" required></textarea>
+                            </div>
+
+                            <div class="form-note">
+                                <p><span class="required">*</span> は必須項目です</p>
+                            </div>
+
+                            <div class="form-submit">
+                                <button type="submit" class="submit-button">送信する</button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="contact-info">
+                        <h2>お問い合わせについて</h2>
+                        
+                        <div class="info-item">
+                            <h3>対応時間</h3>
+                            <p>平日 9:00 - 18:00<br>
+                            ※土日祝日のお問い合わせは翌営業日以降の対応となります<br>
+                            ※緊急案件については土日祝・夜間対応も可能です</p>
+                        </div>
+
+                        <div class="info-item">
+                            <h3>回答までの期間</h3>
+                            <p>通常2営業日以内にご返信いたします。<br>
+                            内容によってはお時間をいただく場合がございます。</p>
+                        </div>
+
+                        <div class="info-item">
+                            <h3>お問い合わせ前のご確認</h3>
+                            <ul>
+                                <li>具体的なプロジェクト内容をお教えいただければ、より詳細な回答が可能です</li>
+                                <li>予算や納期についてもお気軽にご相談ください</li>
+                                <li>技術的なご質問も歓迎いたします</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Modular Systems合同会社. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
