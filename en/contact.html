@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Modular Systems</title>
+    <link rel="icon" type="image/jpeg" href="../favicon.jpeg">
+    <link rel="shortcut icon" type="image/jpeg" href="../favicon.jpeg">
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <img src="../modular_systems.jpg" alt="Modular Systems" class="logo">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Team</a></li>
+                        <li><a href="products.html">Services</a></li>
+                        <li><a href="contact.html" class="active">Contact</a></li>
+                        <li class="language-switcher">
+                            <a href="../contact.html">日本語</a> | 
+                            <a href="contact.html" class="active-lang">English</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Contact</h1>
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <div class="container">
+                <div class="contact-intro">
+                    <p>Please feel free to contact Modular Systems using the form below.<br>
+                    Consultations and estimates only are also welcome. We typically respond within 2 business days.</p>
+                    <p><strong>※You will receive a confirmation email after submitting the form. Please check your spam folder as well.</strong></p>
+                </div>
+
+                <div class="contact-content">
+                    <div class="contact-form-wrapper">
+                        <form class="contact-form" action="https://formspree.io/f/mnnvbkkp" method="POST">
+                            <input type="hidden" name="_next" value="https://modular-systems-inc.github.io/en/success.html">
+                            <input type="hidden" name="_subject" value="Modular Systems Inquiry">
+                            <input type="hidden" name="_captcha" value="false">
+                            
+                            <div class="form-group">
+                                <label for="company">Company Name</label>
+                                <input type="text" id="company" name="company">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="name">Name <span class="required">*</span></label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email Address <span class="required">*</span></label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subject">Inquiry Type <span class="required">*</span></label>
+                                <select id="subject" name="inquiry_type" required>
+                                    <option value="">Please select</option>
+                                    <option value="Consultation">Consultation</option>
+                                    <option value="Estimate">Estimate</option>
+                                    <option value="Support">Support</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Inquiry Details <span class="required">*</span></label>
+                                <textarea id="message" name="message" rows="8" required></textarea>
+                            </div>
+
+                            <div class="form-note">
+                                <p><span class="required">*</span> indicates required fields</p>
+                            </div>
+
+                            <div class="form-submit">
+                                <button type="submit" class="submit-button">Send</button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="contact-info">
+                        <h2>About Inquiries</h2>
+                        
+                        <div class="info-item">
+                            <h3>Business Hours</h3>
+                            <p>Weekdays 9:00 - 18:00<br>
+                            ※Inquiries on weekends and holidays will be responded to on the next business day or later<br>
+                            ※Weekend, holiday, and evening support available for urgent projects</p>
+                        </div>
+
+                        <div class="info-item">
+                            <h3>Response Time</h3>
+                            <p>We typically respond within 2 business days.<br>
+                            Depending on the content, it may take longer.</p>
+                        </div>
+
+                        <div class="info-item">
+                            <h3>Before Contacting Us</h3>
+                            <ul>
+                                <li>More detailed responses are possible if you provide specific project details</li>
+                                <li>Please feel free to discuss budget and timeline</li>
+                                <li>Technical questions are also welcome</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Modular Systems. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

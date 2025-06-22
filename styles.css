@@ -55,6 +55,25 @@ nav a.active {
     color: #0066cc;
 }
 
+.language-switcher {
+    margin-left: auto;
+    font-size: 0.9rem;
+}
+
+.language-switcher a {
+    color: #666;
+    font-weight: 400;
+}
+
+.language-switcher a.active-lang {
+    color: #0066cc;
+    font-weight: 600;
+}
+
+.language-switcher a:hover {
+    color: #0066cc;
+}
+
 .hero {
     background-color: #f8f9fa;
     padding: 4rem 0;
@@ -283,6 +302,12 @@ footer {
         flex-wrap: wrap;
         justify-content: center;
         gap: 1rem;
+    }
+    
+    .language-switcher {
+        margin-left: 0;
+        order: -1;
+        margin-bottom: 0.5rem;
     }
     
     .hero h1 {
